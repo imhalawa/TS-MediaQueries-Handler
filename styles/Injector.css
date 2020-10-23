@@ -1,0 +1,38 @@
+/* CSS Injector 
+***********************************
+* Injecting a content indicating the screen size, which we can retrieve later via javascript
+*
+* HINT: Feel free to adjust the breakpoints for more accuracy
+*/ 
+
+body:before {
+    content: "xsmall";
+    display: none;
+    visibility: hidden;
+  }
+  
+  
+  @media only screen and (min-width: 600px) {
+    body:before {
+      content: "small";
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    body:before {
+      content: "medium";
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    body:before {
+      content: "large";
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    body:before {
+      content: "xlarge";
+    }
+  }
+  
